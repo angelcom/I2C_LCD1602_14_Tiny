@@ -1,6 +1,6 @@
 {
     "name": "I2C_LCD1602_14_Tiny",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Tiny I2C_LCD1602_14 library, solves the defect for less memory of micro:bit:)",
     "license": "MIT",
     "dependencies": {
