@@ -7,7 +7,7 @@
 /**
  * Tiny I2C LCM1602-14 液晶软件包
  */
-//% weight=100 color=#55F343 icon=""
+//% weight=100 color=#0020ff icon=""
 namespace I2C_LCD1602_14 {
     let i2cAddr = 0x3E;
     //let BK: number      // backlight control Not Use
