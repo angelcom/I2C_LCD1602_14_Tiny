@@ -12,13 +12,15 @@ namespace I2C_LCD1602_14 {
     let i2cAddr = 0x3E;
     //let BK: number      // backlight control Not Use
 
+
     /**
      * 初始化 LCD, 设置 I2C 地址。根据芯片不同地址有两种，LCM1602-14 是62(0x3E)。
      * @param address is i2c address for LCD, eg: 62 (0x3E)
      */
-    //% blockId="I2C_LCD1602_Init" block="初始化液晶"
+    //% blockId="LcdInitx" block="初始化液晶，I2C 地址 %address"
     //% weight=100 blockGap=8
-    export function LcdInit() {
+    export function LcdInit(address: number) {
+        i2cAddr = address
         basic.pause(50)
         cmd(0x28)       // set 4bit mode
         basic.pause(5)
